@@ -5,5 +5,5 @@
   > 渲染城市天气基本信息
 #### 待完善......
 
-<img src="miniprogram/static/readme/img1.jpeg" width="400">
-<img src="miniprogram/static/readme/img2.png" width="400">
+<img src="miniprogram/static/readme/img1.jpeg" width="300">
+<img src="miniprogram/static/readme/img2.png" width="300">
