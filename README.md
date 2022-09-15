@@ -1,0 +1,1 @@
+![](miniprogram/static/images/home2.png)
