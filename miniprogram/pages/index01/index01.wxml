@@ -1,0 +1,7 @@
+<!--pages/index01/index01.wxml-->
+
+<view class="index01-container">
+  <weather-main cityInfo="{{cityInfo}}" weatherInfo="{{weatherInfo}}" airInfo="{{airInfo}}" useLocation="{{useLocation}}"></weather-main>
+  <news></news>
+  <today-tomorrow futureWeatherInfo="{{futureWeatherInfo}}"></today-tomorrow>
+</view>

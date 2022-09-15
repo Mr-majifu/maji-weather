@@ -1,0 +1,32 @@
+<!--components/WeatherMain/weather-main.wxml-->
+
+<view class="weather-main">
+  <!-- 地址 -->
+  <view class="address" bindtap="_intoPosition">
+    <image wx:if="{{useLocation}}" class="icon01" src="/static/images/position.svg"></image>
+    <view class="text">{{cityInfo.adm2 == cityInfo.name ? '' : cityInfo.adm2+'市'}} {{cityInfo.name == cityInfo.adm2 ? cityInfo.name+'市' : cityInfo.name}}</view>
+    <image class="icon02" src="/static/images/down-arrows.svg"></image>
+  </view>
+  <!-- 天气摄氏度 -->
+  <view class="temperature">
+    <text>{{weatherInfo.temp}}</text>
+    <image class="temperature-img" src="/static/images/temperature.svg"></image>
+  </view>
+  <!-- 天气详情 -->
+  <view class="detail">
+    <view class="line1">
+      <text class="temperature-describe">{{weatherInfo.text}}</text>
+      <text class="cross-line"> | </text>
+      <!-- 空气质量 -->
+      <view class="air-quality" style="{{airQualityColor}}">
+        <image class="icon" src="/static/images/leaf.svg"></image>
+        <text>{{airInfo.aqi}} {{airInfo.category}}</text>
+      </view>
+    </view>
+    <view class="line2">
+      <text class="wind-power">风力 {{weatherInfo.windScale}}级</text>
+      <text class="humidity">湿度 {{weatherInfo.humidity}}%</text>
+      <text class="air-pressure">气压 {{weatherInfo.pressure}}hPa</text>
+    </view>
+  </view>
+</view>

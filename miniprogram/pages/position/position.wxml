@@ -1,0 +1,50 @@
+<!--pages/position/position.wxml-->
+
+<view class="position">
+  <!-- 搜索 -->
+  <view class="search">
+    <view class="input-cancel">
+      <view class="search-background">
+        <icon type="search" class="icon"></icon>
+        <input class="search-input" placeholder="请输入城市名，快速查询天气信息" />
+      </view>
+      <text class="cancel" bindtap="_backBeforePage">取消</text>
+    </view>
+    <view class="cross-line"></view>
+  </view>
+  <!-- 搜索下拉框 -->
+  <view class="search-res-list">
+    <view class="search-res-item" wx:for="{{100}}" wx:key="index">
+      <text class="address">龙岗区，广东省，中国</text>
+      <view class="cross-line"></view>
+    </view>
+  </view>
+  <!-- 热门城市 -->
+  <view class="hot-city">
+    <view class="title">
+      热门城市
+    </view>
+    <view class="cities">
+      <button class="city" wx:for="{{cities}}" wx:for-item="city" wx:key="index" bindtap="_selectHotCity" data-index="{{index}}" data-city-id="{{city.id}}">
+        {{city.name}}
+      </button>
+    </view>
+  </view>
+  <!-- 历史记录 -->
+  <view class="history">
+    <view class="line1">
+      <view class="title">
+        历史记录
+      </view>
+      <view class="delete-all">
+        <image class="icon" src="/static/images/delete.svg"></image>
+        <text class="text">清空</text>
+      </view>
+    </view>
+    <view class="cities">
+      <button class="city" wx:for="{{historyCities}}" wx:for-item="city" wx:key="index">
+        {{city}}
+      </button>
+    </view>
+  </view>
+</view>

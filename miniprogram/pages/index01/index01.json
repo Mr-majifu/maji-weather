@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "weather-main": "/components/WeatherMain/weather-main",
+    "news": "/components/News/news",
+    "today-tomorrow": "/components/TodayTomorrow/today-tomorrow"
+  }
+}

@@ -1,0 +1,12 @@
+<!--components/News/news.wxml-->
+
+<view class="news">
+  <view class="new1">
+    <text>30公里外正在下雨呢</text>
+    <image class="icon" src="/static/images/right-arrows.svg"></image>
+  </view>
+  <view class="new2">
+    <text>2212 号台风“梅花”来袭，关注动态</text>
+    <image class="icon" src="/static/images/right-arrows.svg"></image>
+  </view>
+</view>

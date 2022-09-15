@@ -1,0 +1,25 @@
+/* components/News/news.wxss */
+
+.news {
+  display: flex;
+  font-weight: 300;
+  .new1, .new2{
+    width: 49%;
+    height: 150rpx;
+    background: linear-gradient(to right,rgba(189, 189, 189, 0.055),rgba(189, 189, 189, 0.267),rgba(189, 189, 189, 0.055));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50rpx;
+    .icon {
+      min-width: 30rpx;
+      min-height: 30rpx;
+      width: 30rpx;
+      height: 30rpx;
+      margin-left: 14rpx;
+    }
+  }
+  .new2 {
+    margin-left: 2%;
+  }
+}

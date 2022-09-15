@@ -1,0 +1,35 @@
+<!--components/TodayTomorrow/today-tomorrow.wxml-->
+
+<view class="today-tomorrow">
+  <view class="today">
+    <view class="line1">
+      <view class="left">
+        <text class="day">今天</text>
+        <view class="air-quality">优</view>
+      </view>
+      <view class="right">
+        <text class="temperature">{{futureWeatherInfo[0].tempMax}}º/{{futureWeatherInfo[0].tempMin}}º</text>
+      </view>
+    </view>
+    <view class="line2">
+      <text class="temperature-describe">{{futureWeatherInfo[0].textDay}}{{futureWeatherInfo[0].textNight == futureWeatherInfo[0].textDay ? "" : "转" + futureWeatherInfo[0].textNight}}</text>
+      <image class="icon" src="/static/images/cloudy.svg"></image>
+    </view>
+  </view>
+  <view class="cross-line"></view>
+  <view class="tomorrow">
+    <view class="line1">
+      <view class="left">
+        <text class="day">明天</text>
+        <view class="air-quality">优</view>
+      </view>
+      <view class="right">
+        <text class="temperature">{{futureWeatherInfo[1].tempMax}}º/{{futureWeatherInfo[1].tempMin}}º</text>
+      </view>
+    </view>
+    <view class="line2">
+      <text class="temperature-describe">{{futureWeatherInfo[1].textDay}}{{futureWeatherInfo[1].textNight == futureWeatherInfo[1].textDay ? "" : "转" + futureWeatherInfo[1].textNight}}</text>
+      <image class="icon" src="/static/images/sun.svg"></image>
+    </view>
+  </view>
+</view>

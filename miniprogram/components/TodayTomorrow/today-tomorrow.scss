@@ -1,0 +1,46 @@
+/* components/TodayTomorrow/today-tomorrow.wxss */
+
+.today-tomorrow {
+  margin-top: 100rpx;
+  background-color: rgba(220, 245, 255, 0.308);
+  height: 160rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 34rpx;
+  font-weight: 300;
+  .today, .tomorrow {
+    width: 40%;
+    .line1 {
+      display: flex;
+      justify-content: space-between;
+      .left {
+        display: flex;
+        align-items: center;
+        .air-quality {
+          height: 40rpx;
+          font-size: 30rpx;
+          background-color: rgb(58, 184, 121);
+          border-radius: 10rpx;
+          padding: 0 26rpx;
+          margin-left: 6rpx;
+          color: white;
+        }
+      }
+    }
+    .line2 {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20rpx;
+      .icon {
+        width: 50rpx;
+        height: 50rpx;
+      }
+    }
+  }
+  .cross-line {
+    margin: 0 30rpx;
+    border: 1px rgba(128, 128, 128, 0.164) solid;
+    height: 130rpx;
+  }
+}
